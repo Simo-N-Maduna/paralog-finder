@@ -53,7 +53,7 @@ optional arguments:
 ```
 _Example:_ To create the graphs displaying a range for D between -80 and 80:
 ```bash
-Rscript HDplot_graphs.R -i batch_1.depthsBias --minD -80 maxD 80
+Rscript HDplot_graphs.R -i batch_1.depthsBias --minD -80 --maxD 80
 ```
 This command will produce four graphs:  
 **graph1_D_vs_Het.png:** The graph shows the read ratio deviation plotted against percentage of heterozygotes in the locus (in this case a single SNP). Since the cloud of points can be misleading when plotting data from millions of SNPs we also added marginal boxplots to all graphs. According to this plot we would pick limits for **D between  -4 and -4** to retain ~95% of the SNPs.  
